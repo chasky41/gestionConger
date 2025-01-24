@@ -1,0 +1,273 @@
+/* Styles généraux */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* Barre de navigation */
+nav {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+nav button:hover {
+  background-color: #c0392b;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulaire */
+.form-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #2980b9;
+}
+
+/* Tableau de bord */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.dashboard h2 {
+  grid-column: 1 / -1;
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.dashboard .card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .card h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #3498db;
+}
+
+.dashboard .card p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.dashboard .card button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dashboard .card button:hover {
+  background-color: #219653;
+}
+
+/* Notifications */
+.notifications {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.notification {
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.notification.success {
+  background-color: #27ae60;
+}
+
+.notification.error {
+  background-color: #e74c3c;
+}
+
+.notification.info {
+  background-color: #3498db;
+}
+
+.notification button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Liste des demandes */
+.request-list {
+  margin-top: 20px;
+}
+
+.request-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.request-list li {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.request-list li strong {
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+      grid-template-columns: 1fr;
+  }
+
+  .form-container {
+      padding: 15px;
+  }
+
+  nav h1 {
+      font-size: 20px;
+  }
+
+  nav button {
+      padding: 6px 12px;
+      font-size: 12px;
+  }
+}/* Styles pour les boutons */
+/* Styles pour les boutons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.button.secondary {
+  background-color: #95a5a6;
+}
+
+.button.secondary:hover {
+  background-color: #7f8c8d;
+}
+
+.button.danger {
+  background-color: #e74c3c;
+}
+
+.button.danger:hover {
+  background-color: #c0392b;
+}
+
+/* Bouton de retour */
+.back-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-button .button {
+  width: auto;
+  padding: 8px 16px;
+  font-size: 14px;
+}
