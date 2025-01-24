@@ -22,7 +22,7 @@ function App() {
         setNotifications((prev) => [...prev, { id, message, type }]);
     };
 
-    // Fonction pour supprimer une notification
+    // Fonction pour supprimer une notifications
     const removeNotification = (id) => {
         setNotifications((prev) => prev.filter((n) => n.id !== id));
     };
